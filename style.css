@@ -1,0 +1,154 @@
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  /* background-color: #000000; */
+  /* color:white; */
+}
+/* header part start */
+header {
+  position:sticky;
+  top:0px;
+  background-color: #212121;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+header > #input-div {
+  /* padding-inline:5px; */
+  display: flex;
+  align-items: center;
+  width: 340px;
+  height: 40px;
+  background-color: #303030;
+  padding: 10px;
+}
+header > #input-div > input {
+  font-size: 20px;
+  color:white;
+  background-color: #121212;
+  width: 262px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
+header > #input-div> img{
+padding-inline:5px
+}
+header > #input-div > div {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  padding: 8px;
+  border-radius: 40px;
+}
+header>div:nth-child(1){
+  margin-left: 30px;
+}
+header>div:nth-child(3){
+  margin-right: 30px;
+}
+header>div:nth-child(3)>img{
+  margin-inline: 6px;
+}
+/* header part end */
+/* section of col1 col2 start*/
+.sec-container {
+  display: flex;
+  /* height: 90vh; */
+}
+/* section of col1 col2 end*/
+/* col1 start*/
+.column1 {
+  width: 15vw;
+  background-color: #212121; /* for example */
+  overflow-y: auto; /* Enable vertical scrollbar */
+  max-height: 90vh; /* Set maximum height for scrolling */
+}
+.column1::-webkit-scrollbar {
+  width: 0;
+}
+/* .column1>.pc1{
+
+} */
+.column1>.pc1 >ul>li{
+  list-style-type: none;
+  color:white;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  padding-block: 10.7px;
+  justify-content: center;
+  font-size: 17px;
+  padding-right: 10px;
+
+}
+.column1>.pc1{
+  margin-block-end:7px;
+  border-bottom: 0.1px ridge #303030;
+}
+
+/* col1 end*/
+
+/* col2 start*/
+.column2 {
+  flex: 1;
+  background-color:#000000; /* for example */
+  overflow-y: auto; /* Enable vertical scrollbar */
+  max-height: 90vh; /* Set maximum height for scrolling */
+}
+.column2::-webkit-scrollbar {
+  width: 0;
+}
+#video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+a{
+  text-decoration: none;
+}
+.video-card {
+  padding: 10px;
+  width: 400px;
+  border-radius: 10px;
+  border-radius: 5px;
+  overflow: hidden;}
+
+.video-card>a>img:first-child {
+  width: 100%;
+  height: auto;
+  border-radius: 15%;
+}
+
+.channel-div >span{
+  padding-left:10px;
+}
+.channel-div h3 {
+  font-size: 15px;
+  color:#AAAAAA;
+}
+.channel-div {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:auto
+}
+
+.channel-div img{
+  width:15%;
+  height: 15%;
+  border-radius: 50%;
+}
+
+.video-card>a>.channel-div p {
+  font-size: 14px;
+  color:#AAAAAA;
+  margin: 0px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video</title>
+    <link rel="icon" href="./assets/yt.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./video.css" />
+  </head>
+  <body>
+    <header>
+      <div style="background-color:#212121">
+        <img style="background-color:#212121" src="./assets/hamburger.svg" />
+        <img style="background-color:#212121" src="./assets/Youtube-Logo.svg" alt="Youtube-Logo" />
+      </div>
+      <div id="input-div">
+        <input type="text" id="search-input" placeholder="Search" />
+        <img src="./assets/search1.svg" style="background-color: #303030" alt="search" />
+        <div><img src="./assets/mic.svg" alt="mic" /></div>
+      </div>
+      <div style="background-color:#212121">
+        <img style="background-color:#212121" src="./assets/headerdiv31.svg" alt="headerdiv31" />
+        <img style="background-color:#212121" src="./assets/headerdiv32.svg" alt="headerdiv32" />
+        <img style="background-color:#212121" src="./assets/headerdiv33.svg" alt="headerdiv33" />
+        <img style="background-color:#212121" src="./assets/headerdiv34.svg" alt="headerdiv34" />
+      </div>
+    </header>
+    <div class="srinija">
+      <section id="left-section">
+        <div id="video-container"></div>
+        <div id="display-views"></div>
+        <div id="channel-info"></div>
+        <div id="channel-info-toggle"></div>
+        <h2 id="Comments"></h2>
+        <div id="comment-section">
+          <!-- Comments will be loaded here -->
+        </div>
+      </section>
+      <section id="right-section">
+        <div id="recommended-videos">
+          <h2>Recommended Videos</h2>
+          <!-- Recommended videos will be loaded here -->
+        </div>
+      </section>
+    </div>
+    <!-- this cdn is defining YT class -->
+    <!-- this YT class needs a divID to render video player iframe-->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <!-- in this script I will be using this YT class -->
+    <script src="./video.js"></script>
+  </body>
+</html>
